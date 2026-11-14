@@ -51,7 +51,25 @@
 //int pages = "464";
 
 //int pages = "464"; //This is a compile-time error 
- int pages = int.Parse("464"); //This is the fix for the compile-time error // or can use .tryparse() if true then prinmt
- //pages = Convert.ToInt32("464");
+//int pages = int.Parse("464"); //This is the fix for the compile-time error // or can use .tryparse() if true then prinmt
+//pages = Convert.ToInt32("464");
+
+#endregion
+#region Question 4
+//Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
+//zero", and then prints "Done" in a finally block.
+try
+{
+Console.WriteLine((10 / 0));
+
+}
+catch (DivideByZeroException)  
+{
+    Console.WriteLine("Cannot divide by zero");
+}
+finally
+{
+    Console.WriteLine("Done");
+}
 
 #endregion
