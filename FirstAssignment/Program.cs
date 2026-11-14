@@ -77,7 +77,24 @@
 #region Question 5
 //Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
 //hna da type of conversion asmha implicit conversion 
-int pages = 300;
-double pagesDouble = pages; 
+//int pages = 300;
+//double pagesDouble = pages; 
 
+#endregion
+#region Question 6
+//Declare a double price = 49.99; then convert it into an int using a cast.
+double price = 49.99;
+int priceInt = (int)price;
+#endregion
+
+#region Question 7
+#endregion
+
+
+#region Question 8
+#endregion
+
+
+
+#region Question 9
 #endregion
