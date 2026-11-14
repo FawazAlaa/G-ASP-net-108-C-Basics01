@@ -58,18 +58,26 @@
 #region Question 4
 //Q04. Write code that divides 10 by 0 inside a try block, catches the exception, prints "Cannot divide by
 //zero", and then prints "Done" in a finally block.
-try
-{
-Console.WriteLine((10 / 0));
+//try
+//{
+//Console.WriteLine((10 / 0));
 
-}
-catch (DivideByZeroException)  
-{
-    Console.WriteLine("Cannot divide by zero");
-}
-finally
-{
-    Console.WriteLine("Done");
-}
+//}
+//catch (DivideByZeroException)  
+//{
+//    Console.WriteLine("Cannot divide by zero");
+//}
+//finally
+//{
+//    Console.WriteLine("Done");
+//}
+
+#endregion
+
+#region Question 5
+//Q05. Declare an int pages = 300; then store it in a double variable without using a cast.
+//hna da type of conversion asmha implicit conversion 
+int pages = 300;
+double pagesDouble = pages; 
 
 #endregion
