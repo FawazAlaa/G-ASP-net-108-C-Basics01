@@ -1,9 +1,11 @@
 ﻿#region Question 1
-//using System.Reflection;
+//Q01. Create a Book class with a Title (string) and Pages (int). Create a Book object and store it in a
+//variable of type object. Print it.
 
-//Book book1 = new Book {
-//    title="The Great Gatsby",
-//    pages=180
+//Book book1 = new Book
+//{
+//    title = "The Great Gatsby",
+//    pages = 180
 //};
 
 //object book2 = new Book
@@ -21,22 +23,35 @@
 #endregion
 
 #region Question2 
-object book1 = new Book
-{
-    title = "My harsh road to become a Full-Stack Developer",
-    pages = 328
-};
+//Q02. Using the Book class above, print the result of calling ToString(), Equals() (compare book with
+//itself), GetHashCode(), and GetType() on book.
 
-Console.WriteLine(typeof(Book));
-Console.WriteLine(book1.Equals(book1));
-Console.WriteLine(book1.GetHashCode());
-Console.WriteLine("equivalent to string is " + book1.ToString());
-Console.WriteLine(book1.GetType());
+//object book1 = new Book
+//{
+//    title = "My harsh road to become a Full-Stack Developer",
+//    pages = 328
+//};
 
-class Book
-{
-    public required string title;
-    public int pages;
-};
+//Console.WriteLine(typeof(Book));
+//Console.WriteLine(book1.Equals(book1));
+//Console.WriteLine(book1.GetHashCode());
+//Console.WriteLine("equivalent to string is " + book1.ToString());
+//Console.WriteLine(book1.GetType());
+
+//class Book
+//{
+//    public required string title;
+//    public int pages;
+//};
+
+#endregion
+
+#region Question 3
+//Q03.Look at the line below. Is it a compile-time error, a runtime error, or a logical error? Fix it.
+//int pages = "464";
+
+//int pages = "464"; //This is a compile-time error 
+ int pages = int.Parse("464"); //This is the fix for the compile-time error // or can use .tryparse() if true then prinmt
+ //pages = Convert.ToInt32("464");
 
 #endregion
