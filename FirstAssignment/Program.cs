@@ -144,11 +144,24 @@
 
 #region Question 12
 //Q12.Declare a string? reviewer = null;. Print whether it is null
-string? reviewer = null;
-Console.WriteLine(reviewer == null);
+//string? reviewer = null;
+//Console.WriteLine(reviewer == null);
 #endregion
 
 #region Question 13
+//Q13.Declare a Book? book = null;. Use?.to safely read book.Title without crashing the program, and
+//print the result.
+//hna do i reuse the book class again or make a type ?
+Book? book = null;
+
+Console.WriteLine(book?.title);
+
+class Book
+{
+    public required string title;
+    public int pages;
+};
+
 
 #endregion
 
