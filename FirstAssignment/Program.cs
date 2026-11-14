@@ -152,21 +152,33 @@
 //Q13.Declare a Book? book = null;. Use?.to safely read book.Title without crashing the program, and
 //print the result.
 //hna do i reuse the book class again or make a type ?
-Book? book = null;
+//Book? book = null;
+//Console.WriteLine(book?.title);
+//class Book
+//{
+//    public required string title;
+//    public int pages;
+//};
 
-Console.WriteLine(book?.title);
+#endregion
+
+#region Question 14
+//Q14.Using title from the previous question, use ?? to print "Untitled" if title is null. Then use ??= to
+//assign title the value "Untitled" only if it's still null.
+Book? book =new Book {  
+title=null,
+};
+
+Console.WriteLine(book?.title ?? "Untitled");
+
+book.title ??= "Untitled of";
+Console.WriteLine(book?.title );
 
 class Book
 {
     public required string title;
     public int pages;
 };
-
-
-#endregion
-
-#region Question 14
-
 #endregion
 
 #region Question 15
