@@ -2,16 +2,23 @@
 //Declare string title = "clean code";. Call title.ToUpper() and store it in a new variable upperTitle.Print
 //both title and upperTitle to show that title did not change.
 
-string title = "clean code";
-string upperTitle = title.ToUpper();
+//string title = "clean code";
+//string upperTitle = title.ToUpper();
 
-Console.WriteLine(title);
-Console.WriteLine(upperTitle);
+//Console.WriteLine(title);
+//Console.WriteLine(upperTitle);
 
 #endregion
 
 #region Question2 
+//Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
+//to check if they point to the same object in memory.
 
+string var01 = "Clean Code";
+string var02 = "Clean Code";
+
+bool areSame = ReferenceEquals(var01, var02);
+Console.WriteLine(areSame);
 
 #endregion
 
