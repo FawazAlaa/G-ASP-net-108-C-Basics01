@@ -14,11 +14,11 @@
 //Declare two separate string variables, both set to the literal "Clean Code". Use ReferenceEquals()
 //to check if they point to the same object in memory.
 
-string var01 = "Clean Code";
-string var02 = "Clean Code";
+//string var01 = "Clean Code";
+//string var02 = "Clean Code";
 
-bool areSame = ReferenceEquals(var01, var02);
-Console.WriteLine(areSame);
+//bool areSame = ReferenceEquals(var01, var02);
+//Console.WriteLine(areSame);
 
 #endregion
 
