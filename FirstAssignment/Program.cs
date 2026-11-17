@@ -174,27 +174,31 @@
 #region Question 16
 //Using the same books array, loop through it and print each title, but stop completely (break) once
 //you reach "Refactoring".
-string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
+//string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
 
-foreach (string book in books)
-{
-    Console.WriteLine(book);
-    if (book == "Refactoring")
-    {
-        break;
-    }
-}
+//foreach (string book in books)
+//{
+//    Console.WriteLine(book);   //>>> Hna if we want not to print "Refactoring we can write console After if statement but question didnot state so
+//    if (book == "Refactoring")
+//    {
+//        break;
+//    }
+//}
 
 #endregion
 
 #region Question 17
-//Using the same books array, use a foreach loop to print every book title.
-//string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
-//foreach (string book in books)
-//{
-//    Console.WriteLine(book);
-//}
-
+//Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
+//continue, don't stop the loop).
+string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
+foreach (string book in books)
+{
+    if (book == "The Pragmatic Programmer")
+    {
+        continue;
+    }
+    Console.WriteLine(book);   
+}
 #endregion
 
 #region Question 18
