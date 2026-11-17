@@ -190,23 +190,35 @@
 #region Question 17
 //Using the same books array, print every title except "The Pragmatic Programmer" (skip it with
 //continue, don't stop the loop).
-string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
-foreach (string book in books)
-{
-    if (book == "The Pragmatic Programmer")
-    {
-        continue;
-    }
-    Console.WriteLine(book);   
-}
-#endregion
-
-#region Question 18
-//Using the same books array, use a foreach loop to print every book title.
 //string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
 //foreach (string book in books)
 //{
-//    Console.WriteLine(book);
+//    if (book == "The Pragmatic Programmer")
+//    {
+//        continue;
+//    }
+//    Console.WriteLine(book);   
 //}
+#endregion
+
+#region Question 18
+//Write a method PrintFirstBook() that prints the first book in the books array. If the array is empty,
+//use return to exit the method early instead of printing anything. we didnot take the functions yet but this one is easy 
+string[] books = ["Clean Code", "The Pragmatic Programmer", "Refactoring"];
+static void PrintFirstBook(string[] books)
+{
+    if (books.Length == 0)
+    {
+        return;
+    }
+    for (int i = 0; i < books.Length; i++)
+    {
+
+          Console.WriteLine(books[i]);
+        
+    }
+}
+
+PrintFirstBook(books);
 
 #endregion
