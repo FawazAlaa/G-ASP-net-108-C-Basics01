@@ -6,14 +6,12 @@
 //Console.WriteLine(prices[1]);
 
 #endregion
-
 #region Question2 
 //Create a 2x2 multidimensional array int[,] shelfCopies where shelf 0 has 3, 5 copies and
 //shelf 1 has 1, 4 copies. Print the number of copies on shelf 1, slot 0.
 //int[,] shelfCopies = { { 3, 5 }, { 1, 4 } };
 //Console.WriteLine(shelfCopies[1, 0]);   
 #endregion
-
 #region Question 3
 //Write a method called PrintWelcomeMessage that takes no parameters and prints
 //"Welcome to the Library!". Call it from Main.
@@ -39,24 +37,37 @@
 
 
 #endregion
-
 #region Question 5
 //Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
 //int pages = 400; and print pages afterward. What do you expect to see, and why?
 
-void AddBonusPages(int pages)
-{
-    pages += 50;
-}
-int pages = 400;
+//void AddBonusPages(int pages)
+//{
+//    pages += 50;
+//}
+//int pages = 400;
 
-AddBonusPages(pages);
+//AddBonusPages(pages);
 
-Console.WriteLine(pages); // I expect to see 400 because the method does not modify the original variable, it only modifies a copy of it.which is treansfered 
-                          // by value not by reference . Therefore, the original variable remains unchanged after the method call.  
+//Console.WriteLine(pages); // I expect to see 400 because the method does not modify the original variable, it only modifies a copy of it.which is treansfered 
+// by value not by reference . Therefore, the original variable remains unchanged after the method call.  
 
 #endregion
 #region Question 6
+
+//Write a method ApplyDiscount(double[] prices) that subtracts 5 from prices[0]. Call it
+//with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to
+//see, and why?
+
+void ApplyDiscount(double[] prices)
+{
+    prices[0] -= 5;
+}
+
+double[] prices = { 25.5, 40.0 };
+ApplyDiscount(prices);
+Console.WriteLine(prices[0]); // I expect to see 20.5 because the method modifies the original array, which is passed by reference. Therefore, the change made to prices[0] inside the method will be reflected in the original array after the method call.
+
 
 
 #endregion
