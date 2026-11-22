@@ -18,15 +18,24 @@
 //Write a method called PrintWelcomeMessage that takes no parameters and prints
 //"Welcome to the Library!". Call it from Main.
 
-void printWelcomeMessage()
-{
-    Console.WriteLine("Welcome to the Library!");
-}
+//void printWelcomeMessage()
+//{
+//    Console.WriteLine("Welcome to the Library!");
+//}
 
-printWelcomeMessage();
+//printWelcomeMessage();
 
 #endregion
 #region Question 4
+//Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
+//"Clean Code
+void PrintBookTitle(string title)
+{
+    Console.WriteLine("Book title: " + title);
+}
+
+string title = "Clean Code";
+PrintBookTitle(title);
 
 
 #endregion
