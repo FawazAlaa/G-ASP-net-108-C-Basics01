@@ -111,21 +111,21 @@
 //price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it
 //and print the price if found
 
-bool TryGetPrice(string title, out double price)
-{
-    if (title == "Clean Code")
-    {
-        price = 25.5;
-        return true;
-    }
-    else
-    {
-        price = 0;
-        return false;
-    }
-}
+//bool TryGetPrice(string title, out double price)
+//{
+//    if (title == "Clean Code")
+//    {
+//        price = 25.5;
+//        return true;
+//    }
+//    else
+//    {
+//        price = 0;
+//        return false;
+//    }
+//}
 
-Console.WriteLine(TryGetPrice("Clean Code", out double price));
+//Console.WriteLine(TryGetPrice("Clean Code", out double price));
 
 
 
@@ -133,6 +133,16 @@ Console.WriteLine(TryGetPrice("Clean Code", out double price));
 #endregion
 
 #region Question 10
+//Write a method PrintBookInfo(string title, int pages = 300) where pages is optional. Call
+//it once with only a title, and once passing both a title and pages.
+void PrintBookInfo(string title, int pages = 300)
+{
+    Console.WriteLine($"Title: {title}, Pages: {pages}");
+}
+
+PrintBookInfo("Clean Code");
+
+PrintBookInfo("Clean Code", 352);
 
 
 #endregion
