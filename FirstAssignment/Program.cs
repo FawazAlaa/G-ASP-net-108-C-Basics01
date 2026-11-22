@@ -59,21 +59,29 @@
 //with double[] prices = { 25.5, 40.0 }; and print prices[0] afterward. What do you expect to
 //see, and why?
 
-void ApplyDiscount(double[] prices)
-{
-    prices[0] -= 5;
-}
+//void ApplyDiscount(double[] prices)
+//{
+//    prices[0] -= 5;
+//}
 
-double[] prices = { 25.5, 40.0 };
-ApplyDiscount(prices);
-Console.WriteLine(prices[0]); // I expect to see 20.5 because the method modifies the original array, which is passed by reference. Therefore, the change made to prices[0] inside the method will be reflected in the original array after the method call.
-
-
+//double[] prices = { 25.5, 40.0 };
+//ApplyDiscount(prices);
+//Console.WriteLine(prices[0]); // I expect to see 20.5 because the method modifies the original array, which is passed by reference. Therefore, the change made to prices[0] inside the method will be reflected in the original array after the method call.
 
 #endregion
 
 #region Question 7
+//Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
+//Call it and print pages afterward. How is the result different from question 5?
+void AddBonusPages(ref int pages)
+{
+    pages += 50;
+}
+int pages = 400;
 
+AddBonusPages(ref pages);
+
+Console.WriteLine(pages);// I expect to see 450 because the method modifies the original variable, which is passed by reference using the ref keyword. Therefore, the change made to pages inside the method will be reflected in the original variable after the method call.
 
 #endregion
 
