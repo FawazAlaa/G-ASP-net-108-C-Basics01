@@ -73,20 +73,35 @@
 #region Question 7
 //Rewrite the method from question 5 as AddBonusPagesByRef(ref int pages) using ref.
 //Call it and print pages afterward. How is the result different from question 5?
-void AddBonusPages(ref int pages)
-{
-    pages += 50;
-}
-int pages = 400;
+//void AddBonusPages(ref int pages)
+//{
+//    pages += 50;
+//}
+//int pages = 400;
 
-AddBonusPages(ref pages);
+//AddBonusPages(ref pages);
 
-Console.WriteLine(pages);// I expect to see 450 because the method modifies the original variable, which is passed by reference using the ref keyword. Therefore, the change made to pages inside the method will be reflected in the original variable after the method call.
+//Console.WriteLine(pages);// I expect to see 450 because the method modifies the original variable, which is passed by reference using the ref keyword. Therefore, the change made to pages inside the method will be reflected in the original variable after the method call.
 
 #endregion
 
 
 #region Question 8
+//Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
+//new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
+//afterward.
+void ReplaceArray(ref double[] prices)
+{
+    prices = new double[] { 10.0, 12.5, 15.0 };
+}
+
+double[] prices = { 25.5, 40.0, 33.75 };
+
+ReplaceArray(ref prices);
+
+Console.WriteLine(prices.Length); // I expect to see 3 because the method replaces the original array with a new array of length 3. Therefore, after the method call, prices will refer to the new array, and its length will be 3.
+Console.WriteLine( prices[0]); 
+
 
 #endregion
 
