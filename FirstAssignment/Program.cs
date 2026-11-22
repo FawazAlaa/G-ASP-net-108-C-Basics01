@@ -29,19 +29,31 @@
 #region Question 4
 //Write a method PrintBookTitle(string title) that prints "Book title: " + title. Call it with
 //"Clean Code
-void PrintBookTitle(string title)
-{
-    Console.WriteLine("Book title: " + title);
-}
+//void PrintBookTitle(string title)
+//{
+//    Console.WriteLine("Book title: " + title);
+//}
 
-string title = "Clean Code";
-PrintBookTitle(title);
+//string title = "Clean Code";
+//PrintBookTitle(title);
 
 
 #endregion
 
 #region Question 5
+//Write a method AddBonusPages(int pages) that adds 50 to pages. Call it with a variable
+//int pages = 400; and print pages afterward. What do you expect to see, and why?
 
+void AddBonusPages(int pages)
+{
+    pages += 50;
+}
+int pages = 400;
+
+AddBonusPages(pages);
+
+Console.WriteLine(pages); // I expect to see 400 because the method does not modify the original variable, it only modifies a copy of it.which is treansfered 
+                          // by value not by reference . Therefore, the original variable remains unchanged after the method call.  
 
 #endregion
 #region Question 6
