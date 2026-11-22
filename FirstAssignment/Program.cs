@@ -90,24 +90,45 @@
 //Write a method ReplaceArray(ref double[] prices) that replaces prices entirely with a
 //new array { 10.0, 12.5, 15.0 }.Call it with your prices array and print prices.Length
 //afterward.
-void ReplaceArray(ref double[] prices)
-{
-    prices = new double[] { 10.0, 12.5, 15.0 };
-}
+//void ReplaceArray(ref double[] prices)
+//{
+//    prices = new double[] { 10.0, 12.5, 15.0 };
+//}
 
-double[] prices = { 25.5, 40.0, 33.75 };
+//double[] prices = { 25.5, 40.0, 33.75 };
 
-ReplaceArray(ref prices);
+//ReplaceArray(ref prices);
 
-Console.WriteLine(prices.Length); // I expect to see 3 because the method replaces the original array with a new array of length 3. Therefore, after the method call, prices will refer to the new array, and its length will be 3.
-Console.WriteLine( prices[0]); 
+//Console.WriteLine(prices.Length); // I expect to see 3 because the method replaces the original array with a new array of length 3. Therefore, after the method call, prices will refer to the new array, and its length will be 3.
+
 
 
 #endregion
 
 
-
 #region Question 9
+//Write a method bool TryGetPrice(string title, out double price) that returns true and sets
+//price to 25.5 if title is "Clean Code", otherwise returns false and sets price to 0. Call it
+//and print the price if found
+
+bool TryGetPrice(string title, out double price)
+{
+    if (title == "Clean Code")
+    {
+        price = 25.5;
+        return true;
+    }
+    else
+    {
+        price = 0;
+        return false;
+    }
+}
+
+Console.WriteLine(TryGetPrice("Clean Code", out double price));
+
+
+
 
 #endregion
 
