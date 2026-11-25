@@ -2,9 +2,11 @@
 {
    
        public class Book
-        {
-            public string Name;
-            private string password;
-        }
+    {
+        public string Name;
+        public string Title;
+        private string password;
+        internal int copiesInStock = 5;
     }
+}
 

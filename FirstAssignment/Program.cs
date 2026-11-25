@@ -6,19 +6,25 @@ using User.Shared;
 
 Book book01 = new Book();
 
-book01.Name = "Star";
+//book01.Name = "Star";
 
-Console.WriteLine(book01.Name);
-Console.WriteLine(book01.password);//'Book' does not contain a definition for 'password' and no accessible extension method
-                                   //'password' accepting a first argument of type 'Book' could be found (are you missing a using directive or an assembly reference?)
-                                   //because the access modifier at private  which is only available within the containing class
+//Console.WriteLine(book01.Name);
+//Console.WriteLine(book01.password);//'Book' does not contain a definition for 'password' and no accessible extension method
+//'password' accepting a first argument of type 'Book' could be found (are you missing a using directive or an assembly reference?)
+//because the access modifier at private  which is only available within the containing class
 
 
 
 
 #endregion
 #region Question2 
- 
+
+//Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile?
+//Why ?
+Console.WriteLine(book01.copiesInStock);
+//No doesnty compile because access modifier is internal which is only used inside the same project
+
+
 #endregion
 #region Question 3
 
