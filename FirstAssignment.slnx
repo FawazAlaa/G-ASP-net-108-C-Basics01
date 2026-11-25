@@ -1,4 +1,4 @@
 <Solution>
-  <Project Path="FirstAssignment/FifthAssignment.csproj" Id="686c52de-b4db-0b16-1225-2a27d0939a24" />
-  <Project Path="User.Shared/User.Shared.csproj" Id="292f0c83-6bef-4c78-bf4b-0420050398aa" />
+  <Project Path="FirstAssignment/SecondAssignment.csproj" />
+  <Project Path="User.Shared/User.Shared.csproj" />
 </Solution>
