@@ -35,10 +35,14 @@ Book book01 = new Book();
 #region Question 4
 //Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
 //assign it Genre.Science, and print it.
-Console.WriteLine(book01.property);
+//Console.WriteLine(book01.property); //enum declared in the User.Shared
 
 #endregion
 #region Question 5
+Console.WriteLine((int)Genre.Fiction);
+Console.WriteLine((int)Genre.NonFiction);
+Console.WriteLine((int)Genre.Science);
+
 
 
 #endregion
