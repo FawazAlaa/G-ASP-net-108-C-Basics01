@@ -21,13 +21,15 @@ Book book01 = new Book();
 
 //Add an internal int copiesInStock = 5; field to Book. Print it from Main. Does it compile?
 //Why ?
-Console.WriteLine(book01.copiesInStock);
+//Console.WriteLine(book01.copiesInStock);
 //No doesnty compile because access modifier is internal which is only used inside the same project
 
 
 #endregion
 #region Question 3
-
+//Add a public string Title; field to Book.Set it and print it from Main.
+book01.Title = "Clean Code";
+Console.WriteLine(book01.Title);
 
 #endregion
 #region Question 4
