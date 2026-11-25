@@ -48,13 +48,16 @@ Book book01 = new Book();
 #endregion
 #region Question 6
 //Given int genreNumber = 1;, cast it into a Genre value and print the result.
-int genreNumber = 1;
-Genre genre = (Genre)genreNumber;
-Console.WriteLine(genre);
+//int genreNumber = 1;
+//Genre genre = (Genre)genreNumber;
+//Console.WriteLine(genre);
 
 #endregion
 
 #region Question 7
+//Given Genre genre = Genre.Fiction;, convert it into a string using ToString() and print it.
+Genre genre = Genre.Fiction;
+Console.WriteLine(genre.ToString());
 
 #endregion
 
