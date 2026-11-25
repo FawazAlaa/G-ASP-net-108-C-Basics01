@@ -28,12 +28,14 @@ Book book01 = new Book();
 #endregion
 #region Question 3
 //Add a public string Title; field to Book.Set it and print it from Main.
-book01.Title = "Clean Code";
-Console.WriteLine(book01.Title);
+//book01.Title = "Clean Code";
+//Console.WriteLine(book01.Title);
 
 #endregion
 #region Question 4
-
+//Declare an enum Genre { Fiction, NonFiction, Science }. Add a Genre property to Book,
+//assign it Genre.Science, and print it.
+Console.WriteLine(book01.property);
 
 #endregion
 #region Question 5
